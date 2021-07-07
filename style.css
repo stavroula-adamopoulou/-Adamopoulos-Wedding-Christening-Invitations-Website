@@ -1,0 +1,769 @@
+* {
+  box-sizing: border-box; 
+}
+
+@font-face {
+    font-family: 'garamond';
+    src: url('EBGaramond.ttf');  
+}
+
+body, header {
+  font-family: garamond, Roboto;
+}
+
+/*Styling - header and footer*/
+.contact-info {
+  height: 50px;
+  width: 100%;
+  background-color: #AC7A7E;
+  font-size: 1.586vw;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone, .address-info, .social-md {
+  margin: 20px;
+}
+
+.social-md a {
+  color: white;
+}
+
+.fa-facebook-square, .fa-instagram-square {
+  font-size: 3.084vw;
+}
+
+.fa-facebook-square:hover{
+  color: black;
+}
+
+.fa-instagram-square:hover{
+  color: black;
+}
+
+.menu {
+  width: 100%;
+  height: 350px;
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  text-align: center;
+  margin-bottom: -250px;
+}
+
+.img-logo  {
+  text-align:center;
+  justify-content: center;
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  position: relative;
+  text-align: center;
+}
+
+.logo img {
+
+  height: auto;
+  width:28%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navbar {
+  background-color: black;
+  overflow: hidden;
+  color: white;
+  width: 100%;
+  height: 20%;
+  margin-top: 10px;
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 9px 17px;
+  text-decoration: none;
+  font-size: 1.203vw;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background-color: #AC7A7E;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+.dropdown {
+  display: none;
+}
+
+.background{
+  width: 100%;
+  height: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/image1.jpg");
+  margin-bottom: 40px;
+  box-shadow: 5px 10px 16px gray;
+}
+
+.line1, .line2 {
+  border-top: black solid 3px;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  background-color: #D3A0A5;
+  width: 100%
+  height: 60%;
+  font-size: 1.400vw;
+  font-weight: bold;
+  color: black;
+}
+
+.logo-copy {
+  width: 33,33%;
+  padding: 20px;
+}
+
+.logo-copy img {
+  width: 70%;  
+}
+
+.copyright {
+  padding: 40px;
+  width: 33,33%;
+
+}
+
+.information {
+  align-items: center;
+  vertical-align: middle; 
+  text-align: center;
+  border-left: dashed white 1px;
+  padding: 20px;
+  width: 33.33%;
+}
+
+.follow {
+  align-items: center;
+  vertical-align: middle; 
+  text-align: center;
+  border-left: dashed white 1px;
+  padding: 20px;
+  width: 50%;
+}
+
+.follow a {
+  color: white;
+}
+
+.follow .fa-facebook-square {
+    font-size: 4.484vw;
+    margin-right: 10px;
+}
+
+.follow .fa-instagram-square  {
+    font-size: 4.484vw;
+}
+
+#myBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 10px; 
+  z-index: 99; 
+  border: none;
+  outline: none; 
+  background-color: #AC7A7E; 
+  color: white; 
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 18px; 
+}
+
+#myBtn:hover {
+  background-color: black; 
+}
+
+/*Index page*/
+.about-adam {
+  width: 100%;
+  height: auto;
+  background-color: #e7cbcd;
+  padding: 20px;
+}
+
+.header3 {
+  padding-left: 40px;
+  padding-top: -30px; 
+  animation: typing 5s steps(12, end) 1s normal both infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: 10px;
+  border-right: 3px solid black;
+  padding-left: 40px;
+  font-size: 3.803vw;
+  color: #AC7A7E;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to { width: 530px; }
+}
+    
+@keyframes  blink-caret {
+  50% {
+    from, to { border-color: transparent }
+  50% { border-color: black; }
+  }
+}
+
+.header1, .header2 {
+  font-size: 3.603vw;
+  color: black;
+  padding-left: 40px;
+  padding-top: -30px; 
+}
+
+.about-adam p {
+   width: 80%;
+   height: auto;
+   margin-left: 100px;
+   word-break: break-word;
+   line-height: 4.903vw;
+   font-size: 2.003vw;
+}
+
+.about-adam a {
+  text-decoration: none;
+  width: 150px;
+  height: 70px;
+  padding: 15px;
+  background-color: #AC7A7E;
+  color: white;
+  border-radius: 15px;
+}
+
+.about-adam a:hover {
+  opacity: 0.6;
+}
+
+.business-page {
+    margin-bottom: 40px;
+}
+
+.wedding-page, .christening-page, .business-page {
+  overflow: hidden;
+}
+
+.wedding-page img, .christening-page img, .business-page img{
+  transition: all 0.3s;
+  transform: scale(1);
+}
+
+.wedding-page:hover img, .christening-page:hover img, .business-page:hover img {
+    transform: scale(1.1);
+}
+
+.product-links img {
+  -o-object-fit: cover;
+  object-fit: cover;  
+}
+
+.product-links .in-row {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-links .in-column {
+  -webkit-box-flex: 50%;   /* OLD - iOS 6-, Safari 3.1-6 */
+  -webkit-flex: 50%;       /* Safari 6.1+. iOS 7.1+, BB10 */
+  -ms-flex: 50%;  
+  flex: 50%;
+  padding: 15px;
+}
+
+.product-links .text {
+  font-size: 4.603vw;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wedding-page, .christening-page, .business-page{
+  position: relative;
+  text-align: center;
+}
+
+/*About page*/
+.info-text .ab-row {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info-text .ab-column {
+  -webkit-box-flex: 50%;   /* OLD - iOS 6-, Safari 3.1-6 */
+  -webkit-flex: 50%;       /* Safari 6.1+. iOS 7.1+, BB10 */
+  -ms-flex: 50%; 
+  flex: 50%;
+  padding: 40px;
+}
+
+.info-text {
+  font-size: 2.203vw;
+  line-height: 4.000vw;
+}
+
+.ab-column img {
+  box-shadow: 5px 10px 16px gray;
+  outline: 2px solid white;
+  outline-offset: -15px;
+}
+
+.text3 {
+  width:100%;
+  height: auto;
+  padding:60px;
+}
+
+/*Wedding, christening and business products pages*/
+.invitations-text {
+  padding: 30px;
+  width: 90%;
+  height: auto;  
+}
+
+.invitations-text p  {
+  word-break: break-word;
+  line-height: 4.903vw;
+  font-size: 2.003vw;
+  padding: 20px 90px;
+}
+
+.invitations-text h1   {
+  font-size: 2.903vw;
+  color: black;
+  padding-left: 90px;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  background-color: #AC7A7E;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*Contact page*/ 
+.address {
+  background-color: #e2e9e5;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-top: 3px solid black;
+}
+
+.address h2, .hours h2  {
+    font-size: 2.600vw;
+}
+
+.address p {
+  font-size: 1.900vw;
+  font-weight: bold;
+}
+
+.info-container {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto; 
+  background-color: #e9e2e3;
+  padding: 10px;
+  margin-bottom: 30px;
+  border-top: 3px solid black;
+}
+
+.hours p  {
+  font-size: 1.900vw;
+  line-height: 2.400vw;
+  word-spacing: 20px;
+}
+
+.hours, .map {
+  flex: 1;
+}
+
+.hours:first-child, .map:first-child {
+    margin-right: 20px;
+}
+
+/*  --------------------------------------------*/
+
+
+/*Smaller Devices*/
+@media only screen and (max-width: 800px)and (min-device-width : 320px) {
+  body {
+    display:block;
+  }
+
+/*navigation bar*/
+.navbar  {
+  display: none;
+}
+
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content a:hover {
+  background-color: #AC7A7E;
+}
+
+.dropdown {
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  position: relative;
+  display: inline;
+}
+
+.dropdown a {
+  color: white;
+  text-decoration: none;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.show {
+  display:block;
+}
+
+/*Smaller Devices - header & footer*/
+.contact-info {
+  display: none;
+}
+
+.logo img {
+  width:50%;
+}
+
+.logo-copy img, .copyright, .follow h2 {
+  display: none;
+}
+
+.follow {
+  border-left: none;
+}
+  
+.follow h2 {
+  display: none;
+}
+
+.information {
+  border-left: none;
+  margin: 0 auto;
+  padding: 5px;
+  width: 100%;
+}
+
+footer {
+  font-size: 16px;
+  flex-direction: column;
+  text-align: center;
+}
+
+#myBtn {
+  font-size: 13px;
+}
+
+.follow .fa-instagram-square {
+  position: fixed; 
+  bottom: 210px; 
+  right: 10px; 
+  z-index: 99; 
+  font-size: 50px;
+  color: #AC7A7E;
+}
+
+.follow .fa-facebook-square {
+  position: fixed; 
+  bottom: 150px; 
+  right: 0px; 
+  z-index: 99; 
+  font-size: 50px;
+  color: #AC7A7E;
+}
+
+/*  Smaller Devices - index page*/
+.header1 {  
+  font-size: 25px;
+}
+
+.header2 {
+  font-size: 25px;
+}
+
+.header3 {
+  font-size: 25px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to { width: 350px; }
+}
+
+.about-adam p, .about-adam a {
+  font-size: 22px;
+}
+
+.about-adam p {
+  margin-left: 40px;
+  line-height: 40px;
+}
+
+.product-links .text {
+  font-size: 40px;
+}
+
+/*Smaller Devices - about page*/
+.info-text .ab-row{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.info-text {
+  font-size: 25px; 
+  line-height: 40px;
+}
+
+/*Smaller Devices - wedding, christening, business products pages*/
+.invitations-text h1 {
+  font-size: 25px;
+}
+
+.invitations-text p {
+  font-size: 21px;
+  line-height: 30px;
+  width: 100%;
+  padding: 10px;
+  margin-left: 20px;
+}
+  
+/*Smaller Devices - contact page */
+
+.address {
+  border-top: 3px solid black;
+}
+
+.address h2, .hours h2  {
+  font-size: 5.500vw;
+}
+
+.address p {
+  font-size: 3.600vw;
+}
+
+.info-container {
+  flex-direction: column;
+  text-align: center;
+  border-top: 3px solid black;
+}
+
+.hours p {
+  font-size: 3.600vw;
+  line-height: 5.900vw;
+  word-spacing: 20px;
+  font-weight: bold;
+}
+
+.map {
+  margin-top: 40px;
+  width: 100%;
+  height: auto;
+}
+
+}
+
+/*  --------------------------------------------*/
+
+ @media only screen
+    and (max-width : 320px) { 
+
+/*  Mobile version - index page*/
+.header1 {  
+  font-size: 18px;
+}
+
+.header2 {
+  font-size: 18px;
+}
+
+.header3 {
+  font-size: 18px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to { width: 280px; }
+}
+
+.about-adam p, .about-adam a {
+  font-size: 16px;
+}
+
+.about-adam p {
+  margin-left: 18px;
+  line-height: 26px;
+}
+
+.product-links .text {
+  font-size: 20px;
+}
+    
+/*Mobile version - about page*/
+.info-text {
+  font-size: 22px; 
+  line-height: 35px;
+}
+    
+/*Mobile version - wedding, christening, business products pages*/
+.invitations-text h1 {
+  font-size: 25px;
+}
+
+.invitations-text p {
+  font-size: 22px;
+  line-height: 30px;
+  width: 100%;
+  padding: 10px;
+  margin-left: 20px;
+}
+  
+/*Mobile version - contact page */
+.address h2, .hours h2  {
+  font-size: 25px;
+}
+
+.address p {
+  font-size: 22px;
+}
+
+.hours p {
+  font-size: 22px;
+  line-height: 30px;  
+}
+}
