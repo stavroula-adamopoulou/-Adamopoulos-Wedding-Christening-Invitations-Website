@@ -7,6 +7,11 @@
     src: url('EBGaramond.ttf');  
 }
 
+@font-face {
+    font-family: 'jura';
+    src: url('Jura-Regular.ttf');  
+}
+
 body, header {
   font-family: garamond, Roboto;
 }
@@ -22,6 +27,11 @@ body, header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.phone, .address-info {
+  letter-spacing: 1px;
+  word-spacing: 3px;
 }
 
 .phone, .address-info, .social-md {
@@ -81,7 +91,9 @@ body, header {
 }
 
 .navbar {
-  font-family: garamond;
+  font-family: jura;
+  font-size: 1.603vw;
+  letter-spacing: 2px;
   overflow: hidden;
   color: black;
   width: 100%;
@@ -101,20 +113,19 @@ body, header {
   text-align: center;
   padding: 9px 17px;
   text-decoration: none;
-  font-size: 2.003vw;
-  font-weight: bold;
 }
 
 .navbar a:hover {
-  color: #AC7A7E;
+ 	color: #AC7A7E;
 }
 
 .navbar .icon {
-  display: none;
+ 	display: none;
 }
 
 .dropdown {
-  display: none;
+	font-family: jura;
+ 	display: none;
 }
 
 .background{
@@ -137,8 +148,10 @@ footer {
   display: flex;
   background: #D3A0A5;
   height: 50%;
-  font-size: 1.400vw;
+  font-size: 1.500vw;
   font-weight: bold;
+  letter-spacing: 1px;
+  word-spacing: 3px;
   color: black;
 }
 
@@ -245,6 +258,7 @@ footer {
 
 .header1, .header2 {
   font-size: 3.603vw;
+  letter-spacing: 10px;
   color: black;
   padding-left: 40px;
   padding-top: -30px; 
@@ -257,6 +271,8 @@ footer {
    word-break: break-word;
    line-height: 4.903vw;
    font-size: 2.003vw;
+   letter-spacing: 1px;
+   word-spacing: 3px;
 }
 
 .about-adam a {
@@ -309,9 +325,10 @@ footer {
   padding: 15px;
 }
 
-.product-links .text {
+.product-links .text {	
   font-size: 4.603vw;
   font-weight: bold;
+  letter-spacing: 1px;
   color: white;
   text-decoration: none;
   position: absolute;
@@ -330,7 +347,7 @@ footer {
 }
 
 .privacy-link{
-margin-top: 40px;
+	margin-top: 40px;
 }
 
 .privacy-link a:hover{
@@ -363,6 +380,8 @@ margin-top: 40px;
 .info-text {
   font-size: 2.203vw;
   line-height: 4.000vw;
+  letter-spacing: 1px;
+  word-spacing: 3px;
 }
 
 .ab-column img {
@@ -388,6 +407,8 @@ margin-top: 40px;
   word-break: break-word;
   line-height: 4.903vw;
   font-size: 2.003vw;
+  letter-spacing: 1px;
+  word-spacing: 3px;
   padding: 20px 90px;
 }
 
@@ -459,6 +480,8 @@ margin-top: 40px;
   padding: 20px;
   margin-bottom: 30px;
   border-top: 1px solid black;
+  letter-spacing: 1px;
+  word-spacing: 3px;
 }
 
 .address h2, .hours h2  {
@@ -490,6 +513,7 @@ margin-top: 40px;
   font-size: 1.900vw;
   line-height: 2.400vw;
   word-spacing: 20px;
+  letter-spacing: 1px;
 }
 
 .hours, .map {
@@ -518,8 +542,8 @@ margin-top: 40px;
   background-color: black;
   color: white;
   padding: 16px;
-  font-family: garamond;
-  font-size: 20px;
+  font-family: jura;
+  font-size: 18px;
   border: none;
   cursor: pointer;
 }
@@ -554,6 +578,7 @@ margin-top: 40px;
   color: white;
   padding: 12px 16px;
   text-decoration: none;
+  font-size: 16px;
   display: block;
 }
 
